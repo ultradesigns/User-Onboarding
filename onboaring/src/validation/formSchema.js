@@ -1,34 +1,29 @@
-import * as yup from "yup";
+import * as yup from 'yup';
 
-// export default yup.object().shape({
-//     username: yup.string()
-//     .required("user required")
-//     .min(3, "min. 3 char long"),
-//     email:  yup.string().email("email required"),
-   
-//     role:  
-//     yup.string()
-//     .string()
-//     .oneOf(["tl", "instructor", "student", "alumni"], "role is required"),
-   
-//     civil:  yup.string(),
-  
-//     hiking: yup.boolean,
-//     reading: yup.boolean,
-//     coding: yup.boolean,
-// });
+export default yup.object().shape({
+    fname: yup
+    .string()
+    .required('Required field')
+    .min(2, 'Required field'),
 
-// const formSchema = Yup.object().shape({
-//     email: Yup
-//       .string()
-//       .email("Must be a valid email address.")
-//       .required("Must include email address."),
-//     password: Yup
-//       .string()
-//       .required("Password is Required")
-//       .min(6, "Passwords must be at least 6 characters long."),
-//     terms: Yup
-//       .boolean()
-//       .oneOf([true], "You must accept Terms and Conditions"),
-//       // required isn't required for checkboxes.
-//   });
+    lname: yup
+    .string()
+    .required('Required field')
+    .min(2, 'Required field'),
+
+    email: yup
+    .string()
+    .email('Required field')
+    .required('Required field'),
+
+    password: yup
+    .string()
+    .required('Required field')
+    .min(8, 'Password must contain 8 characters'),
+
+    role: yup
+    .string()
+    .oneOf(['Fundamentals', 'Pre-work', 'Ux/Ui', 'Web-Dev', 'Computer Science'], 'Role is required'),
+
+    terms: yup.boolean()
+});

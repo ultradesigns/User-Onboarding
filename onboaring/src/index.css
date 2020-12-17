@@ -11,3 +11,37 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.App{
+  border: 2px solid blue;
+  background-color:lightblue;
+}
+
+.Heading{
+  color: Blue;
+  border: 2px solid blue;
+  margin: 10px 100px 10px 100px;
+}
+
+.Formstyles{
+  border: 2px solid blue;
+  margin: 50px;
+  background-color:grey;
+}
+
+.RedText{
+  color: red;
+}
+
+.Looks{
+  color: blue;
+  background-color: lightblue;
+  border:2px solid blue;
+  padding:  5px 10px;
+  margin: 5px;
+}
+
+.NewLook{
+  border: 1px solid blue;
+  background-color:lightblue;
+}
